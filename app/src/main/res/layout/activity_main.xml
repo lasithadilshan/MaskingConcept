@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your num" />
+
+    <com.vicmikhailau.maskededittext.MaskedEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="+1 (405) 555 5555"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:mask="+# (###) ### ####" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Enter your License number" />
+
+    <com.vicmikhailau.maskededittext.MaskedEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="A000-0000-0000"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:mask="U###-####-####" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Date" />
+
+    <com.vicmikhailau.maskededittext.MaskedEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="10-Apr-2021"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:mask="##-ULL-####" />
+
+</LinearLayout>
